@@ -1,5 +1,6 @@
 # DeepSeek Engineer 
 ## Write faster code so that you can take on more jobs and pretend you're so efficient. 
+<img width="1283" alt="Screenshot 2025-01-25 at 16 59 33" src="https://github.com/user-attachments/assets/bfe7dbe7-ded5-4442-a862-d7e39da83ceb" />
 
 ```markdown " file="README.md"
 ...
