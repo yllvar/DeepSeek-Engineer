@@ -28,32 +28,55 @@ export class CommandProcessor {
   }
 
   private async addFile(path: string): Promise<string> {
-    if (await this.fileOps.isDirectory(path)) {
-      const files = await this.fileOps.readDirectory(path, true)
-      for (const file of files) {
-        const content = await this.fileOps.readLocalFile(file)
-        this.conversationManager.addFileContext(file, content)
+    console.log(`Attempting to add file: ${path}`)
+    try {
+      if (await this.fileOps.isDirectory(path)) {
+        const files = await this.fileOps.readDirectory(path, true)
+        for (const file of files) {
+          const content = await this.fileOps.readLocalFile(file)
+          this.conversationManager.addFileContext(file, content)
+        }
+        return `Added ${files.length} files from directory ${path} to context`
+      } else {
+        const content = await this.fileOps.readLocalFile(path)
+        this.conversationManager.addFileContext(path, content)
+        return `Added file ${path} to context`
       }
-      return `Added ${files.length} files from directory ${path} to context`
-    } else {
-      const content = await this.fileOps.readLocalFile(path)
-      this.conversationManager.addFileContext(path, content)
-      return `Added file ${path} to context`
+    } catch (error) {
+      console.error(`Error adding file: ${path}`, error)
+      throw new Error(`Failed to add file: ${error instanceof Error ? error.message : String(error)}`)
     }
   }
 
   private async listDirectory(path: string): Promise<string> {
-    const files = await this.fileOps.readDirectory(path)
-    return files.join("\n")
+    console.log(`Attempting to list directory: ${path}`)
+    try {
+      const files = await this.fileOps.readDirectory(path)
+      return files.join("\n")
+    } catch (error) {
+      console.error(`Error listing directory: ${path}`, error)
+      throw new Error(`Failed to list directory: ${error instanceof Error ? error.message : String(error)}`)
+    }
   }
 
   private async catFile(path: string): Promise<string> {
-    return await this.fileOps.readLocalFile(path)
+    console.log(`Attempting to read file: ${path}`)
+    try {
+      return await this.fileOps.readLocalFile(path)
+    } catch (error) {
+      console.error(`Error reading file: ${path}`, error)
+      throw new Error(`Failed to read file: ${error instanceof Error ? error.message : String(error)}`)
+    }
   }
 
   private async executeCommand(command: string): Promise<string> {
-    // IMPORTANT: This should be used with caution and proper security measures
-    return await this.fileOps.executeCommand(command)
+    console.log(`Attempting to execute command: ${command}`)
+    try {
+      return await this.fileOps.executeCommand(command)
+    } catch (error) {
+      console.error(`Error executing command: ${command}`, error)
+      throw new Error(`Failed to execute command: ${error instanceof Error ? error.message : String(error)}`)
+    }
   }
 }
 
