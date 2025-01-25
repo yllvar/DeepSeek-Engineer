@@ -3,7 +3,7 @@
 
 # 🚀 DeepSeek Engineer: Code Faster, Smarter, and More Efficiently! 🚀
 
-Welcome to **DeepSeek Engineer**, your ultimate tool for writing code faster, taking on more projects, and looking like a coding wizard! 🧙‍♂️ Whether you're a seasoned developer or just starting out, this project is designed to supercharge your workflow and make coding a breeze. Let's dive in! 🌊
+**DeepSeek Engineer** is your ultimate tool for writing code faster, taking on more projects, and looking like a coding wizard! 🧙‍♂️ Whether you're a seasoned developer or just starting out, this project is designed to supercharge your workflow and make coding a breeze. Let's dive in! 🌊
 
 ---
 
@@ -184,6 +184,37 @@ This project is licensed under the MIT License. For more details, see the [LICEN
 ## 🆘 Support
 
 For support, please open an issue in the GitHub repository or contact the maintainers.
+
+---
+
+## 🚨 Important Note on File Access
+
+### **Local Development vs. Deployed Environment**
+
+1. **Local Development**:
+   - When running the application locally on your machine, it can access local files.
+   - Commands like `/add`, `/ls`, and `/cat` will work as expected, allowing you to interact with files on your local machine.
+
+2. **Deployed on Vercel**:
+   - The deployed application **cannot** access files on your local machine.
+   - File operations will not work in the deployed environment as it lacks access to your local file system.
+
+### **Intended Use**
+
+- **Local Development**: The file access features are primarily for development and testing on your local machine.
+- **Deployed Environment**: When deployed, the application should be adapted to work with cloud storage solutions or other methods of file handling that don't rely on local file access.
+
+### **Adapting for Deployment**
+
+To make the application work similarly when deployed, consider the following steps:
+
+1. **Implement a file upload feature** to send local files to the server.
+2. **Use cloud storage** (like AWS S3 or Google Cloud Storage) to store and access files.
+3. **Modify the file operation commands** to work with the cloud storage instead of the local file system.
+
+### **Current Limitations**
+
+The current implementation doesn't distinguish between local and deployed environments, which is why you might experience issues when trying to access local files through the deployed application.
 
 ---
 
