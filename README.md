@@ -1,4 +1,5 @@
-project="DeepSeek Engineer" 
+# DeepSeek Engineer 
+## Write faster code so that you can take on more jobs and pretend you're so efficient. 
 
 ```markdown " file="README.md"
 ...
@@ -163,11 +164,9 @@ npm run lint
 
 
 
-
-
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are encourage! Please feel free to submit a Pull Request or we can brainstorm together, Kinda believe there are more smarter people out there and I'm eager to learn more.
 
 ## License
 
@@ -186,15 +185,6 @@ For support, please open an issue in the GitHub repository or contact the mainta
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ and sense of laziness by me Yllvar
 
-```plaintext
 
-This README provides a comprehensive overview of the DeepSeek Engineer project, including installation instructions, features, architecture, and future improvements. You can customize it further based on your specific needs or additional features you plan to implement.
-
-Remember to:
-1. Replace `your-username` with your actual GitHub username
-2. Update the license information if you're using a different license
-3. Add your name or organization name where appropriate
-4. Add any specific configuration or deployment instructions for your use case
-```
