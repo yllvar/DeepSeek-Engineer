@@ -1,191 +1,196 @@
 # DeepSeek Engineer 
 ## Write faster code so that you can take on more jobs and pretend you're so efficient. 
-<img width="1283" alt="Screenshot 2025-01-25 at 16 59 33" src="https://github.com/user-attachments/assets/bfe7dbe7-ded5-4442-a862-d7e39da83ceb" />
 
-```markdown " file="README.md"
-...
-```
+<img width="844" alt="Screenshot 2025-01-25 at 17 11 12" src="https://github.com/user-attachments/assets/1cfd12eb-c91e-4429-b1bf-cbb5a29144db" />
 
-2. Install dependencies:
+# 🚀 DeepSeek Engineer: Code Faster, Smarter, and More Efficiently! 🚀
 
+Welcome to **DeepSeek Engineer**, your ultimate tool for writing code faster, taking on more projects, and looking like a coding wizard! 🧙‍♂️ Whether you're a seasoned developer or just starting out, this project is designed to supercharge your workflow and make coding a breeze. Let's dive in! 🌊
+
+---
+
+## 🛠️ Getting Started
+
+### 1. **Install Dependencies**
+
+First things first, let's get everything set up. Run the following command to install all the necessary dependencies:
 
 ```shellscript
 npm install
 ```
 
-3. Set up environment variables:
-Create a `.env.local` file in the root directory with the following content:
+### 2. **Set Up Environment Variables**
 
+Next, create a `.env.local` file in the root directory and add your DeepSeek API key:
 
 ```plaintext
 DEEPSEEK_API_KEY=your_api_key_here
 ```
 
-4. Start the development server:
+### 3. **Start the Development Server**
 
+Now, let's fire up the development server:
 
 ```shellscript
 npm run dev
 ```
 
-The application will be available at `http://localhost:3000`.
+Once the server is running, you can access the application at `http://localhost:3000`.
 
-## Code Architecture
+---
 
-The project follows a modular architecture with clear separation of concerns:
+## 🏗️ Code Architecture
 
-### Core Components
+The project is built with a modular architecture, ensuring a clear separation of concerns. Here's a breakdown of the core components:
 
-- `src/components/Chat.tsx`: Main chat interface component
-- `src/hooks/useChat.ts`: Custom hook for chat functionality
-- `src/utils/deepseek-client.ts`: DeepSeek API integration
-- `src/utils/file-operations.ts`: File system operations
-- `src/utils/conversation-manager.ts`: Chat history and context management
+### **Core Components**
 
+- **`src/components/Chat.tsx`**: The main chat interface component.
+- **`src/hooks/useChat.ts`**: Custom hook for managing chat functionality.
+- **`src/utils/deepseek-client.ts`**: Handles integration with the DeepSeek API.
+- **`src/utils/file-operations.ts`**: Manages file system operations.
+- **`src/utils/conversation-manager.ts`**: Handles chat history and context management.
 
-### Key Features
+---
 
-1. **Chat Interface**
+## ✨ Key Features
 
-1. Real-time message streaming
-2. Markdown support
-3. Code syntax highlighting
-4. Error handling and loading states
+### **1. Chat Interface**
 
+- **Real-time message streaming** 💬
+- **Markdown support** 📝
+- **Code syntax highlighting** 🌈
+- **Error handling and loading states** ⚠️
 
+### **2. File Operations**
 
-2. **File Operations**
+- **File reading and writing** 📂
+- **Directory traversal** 🗂️
+- **Diff generation for file modifications** 🔄
+- **Safety checks and validations** ✅
 
-1. File reading and writing
-2. Directory traversal
-3. Diff generation for file modifications
-4. Safety checks and validations
+### **3. AI Integration**
 
+- **Context-aware responses** 🤖
+- **Code analysis capabilities** 🔍
+- **Intelligent code modifications** 🛠️
+- **Rate limiting and error handling** ⏳
 
+---
 
-3. **AI Integration**
+## 🎮 Usage
 
-1. Context-aware responses
-2. Code analysis capabilities
-3. Intelligent code modifications
-4. Rate limiting and error handling
-
-
-
-
-
-## Usage
-
-### Basic Chat
+### **Basic Chat**
 
 Simply type your questions or requests in the chat interface. The AI will respond with relevant code, explanations, or suggestions.
 
-### File Operations
+### **File Operations**
 
 Use the following commands in the chat:
 
-- `/add <path>`: Add a file or directory to the conversation context
-- `/ls <path>`: List contents of a directory
-- `/cat <path>`: Display contents of a file
-- `/exec <command>`: Execute a shell command (use with caution)
+- **`/add <path>`**: Add a file or directory to the conversation context.
+- **`/ls <path>`**: List contents of a directory.
+- **`/cat <path>`**: Display contents of a file.
+- **`/exec <command>`**: Execute a shell command (use with caution).
 
-
-### Code Modifications
+### **Code Modifications**
 
 When requesting code changes, the AI will:
 
-1. Analyze the existing code
-2. Generate appropriate modifications
-3. Show a diff preview of changes
-4. Apply the changes upon confirmation
+1. Analyze the existing code.
+2. Generate appropriate modifications.
+3. Show a diff preview of changes.
+4. Apply the changes upon confirmation.
 
+---
 
-## Development
+## 🚀 Development
 
-### Building for Production
+### **Building for Production**
 
 ```shellscript
 npm run build
 npm start
 ```
 
-### Running Tests
+### **Running Tests**
 
 ```shellscript
 npm run test
 ```
 
-### Linting
+### **Linting**
 
 ```shellscript
 npm run lint
 ```
 
-## Future Improvements
+---
 
-1. **Enhanced IDE Integration**
+## 🔮 Future Improvements
 
-1. VSCode extension
-2. Direct file editing capabilities
-3. Syntax-aware code modifications
+### **1. Enhanced IDE Integration**
 
+- **VSCode extension** 🖥️
+- **Direct file editing capabilities** ✏️
+- **Syntax-aware code modifications** 🧠
 
+### **2. Advanced Features**
 
-2. **Advanced Features**
+- **Multi-file context understanding** 📚
+- **Project-wide refactoring** 🔧
+- **Test generation** 🧪
+- **Documentation generation** 📄
 
-1. Multi-file context understanding
-2. Project-wide refactoring
-3. Test generation
-4. Documentation generation
+### **3. User Experience**
 
+- **Custom themes** 🎨
+- **Keyboard shortcuts** ⌨️
+- **Command history** ⏪
+- **Context persistence** 💾
 
+### **4. Security**
 
-3. **User Experience**
+- **Role-based access control** 🔐
+- **Secure file operations** 🛡️
+- **API key rotation** 🔄
 
-1. Custom themes
-2. Keyboard shortcuts
-3. Command history
-4. Context persistence
+### **5. Performance**
 
+- **Response caching** ⚡
+- **Optimized file operations** 🚀
+- **Reduced API calls** 📉
 
+---
 
-4. **Security**
+## 🤝 Contributing
 
-1. Role-based access control
-2. Secure file operations
-3. API key rotation
+We welcome contributions from the community! Whether you're fixing a bug, adding a feature, or just want to brainstorm ideas, we'd love to have you on board. Please feel free to submit a Pull Request or reach out to us. We believe there are smarter people out there, and we're eager to learn from you! 🌟
 
+---
 
+## 📜 License
 
-5. **Performance**
+This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
-1. Response caching
-2. Optimized file operations
-3. Reduced API calls
+---
 
+## 🙏 Acknowledgments
 
+- **Built with [Next.js](https://nextjs.org/)** ⚛️
+- **Powered by [DeepSeek API](https://deepseek.com)** 🤖
+- **UI components from [shadcn/ui](https://ui.shadcn.com/)** 🎨
 
-## Contributing
+---
 
-Contributions are encourage! Please feel free to submit a Pull Request or we can brainstorm together, Kinda believe there are more smarter people out there and I'm eager to learn more.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built with [Next.js](https://nextjs.org/)
-- Powered by [DeepSeek API](https://deepseek.com)
-- UI components from [shadcn/ui](https://ui.shadcn.com/)
-
-
-## Support
+## 🆘 Support
 
 For support, please open an issue in the GitHub repository or contact the maintainers.
 
 ---
 
-Made with ❤️ and sense of laziness by me Yllvar
+Made with ❤️ and a touch of laziness by **Yllvar**. 😄
 
+---
 
+Happy coding! 🎉
